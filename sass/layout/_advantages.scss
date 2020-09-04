@@ -1,0 +1,47 @@
+.advantages {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  .title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $secondary-color;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+  .text {
+    letter-spacing: 0.03em;
+  }
+}
+.advantages-item {
+  width: calc((100% - 90px) / 4);
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+.advantages-item::before {
+  content: '';
+  display: block;
+  height: 120px;
+  background-color: #f5f4fa;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.advantages-item.vector::before {
+  background-image: url(../images/icons/vector.svg);
+}
+.advantages-item.watch::before {
+  background-image: url(../images/icons/watch.svg);
+}
+.advantages-item.computer::before {
+  background-image: url(../images/icons/computer.svg);
+}
+.advantages-item.technology::before {
+  background-image: url(../images/icons/technology.svg);
+}
+.last-text {
+  margin-bottom: 0;
+}
