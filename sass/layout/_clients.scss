@@ -1,20 +1,35 @@
 .clients {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @media screen and (min-width: 1230px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 .clients-list {
   margin: 0;
   padding: 0;
   list-style: none;
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  margin: -15px;
+  @media screen and (min-width: 1230px) {
+    margin: 0;
+    justify-content: center;
+  }
 }
-.clients-item:not(:first-child) {
-  margin-left: 30px;
+.clients-item {
+  margin: 15px;
+  @media screen and (min-width: 1230px) {
+    margin: 0;
+    &:not(:first-child) {
+      margin-left: 30px;
+    }
+  }
 }
 .clients-link {
   display: inline-flex;
-  width: 170px;
+  width: 210px;
   height: 90px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
@@ -24,5 +39,11 @@
   &:hover,
   &:focus {
     border-color: $accent-color;
+  }
+  @media screen and (min-width: 768px) {
+    width: 226px;
+  }
+  @media screen and (min-width: 1230px) {
+    width: 170px;
   }
 }

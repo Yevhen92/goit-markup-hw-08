@@ -2,10 +2,21 @@ footer {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: #2f303a;
+  text-align: center;
+  @media screen and (min-width: 1230px) {
+    text-align: left;
+  }
 }
 .footer {
-  display: flex;
-  align-items: baseline;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+  @media screen and (min-width: 1230px) {
+    align-items: baseline;
+  }
 }
 .address-list {
   list-style: none;
@@ -37,11 +48,22 @@ footer {
   display: inline;
 }
 .write-email {
-  margin-left: auto;
+  @media screen and (min-width: 768px) and (max-width: 1229px) {
+    margin-top: 60px;
+  }
+  @media screen and (min-width: 1230px) {
+    margin-left: auto;
+  }
 }
 .subscribe {
-  display: flex;
-  margin-top: 20px;
+  @media screen and (min-width: 768px) and (max-width: 1229px) {
+    width: 460px;
+  }
+  @media screen and (min-width: 1230px) {
+    width: auto;
+    // display: flex;
+    margin-top: 20px;
+  }
 }
 .subscribe-button {
   padding: 10px 28px;
@@ -53,11 +75,17 @@ footer {
   font-weight: 700;
   line-height: 1.87;
   letter-spacing: 0.06em;
-  margin-left: 12px;
+  // margin-left: 12px;
   height: 50px;
+  margin-top: 20px;
+  @media screen and (min-width: 1230px) {
+    margin-top: 0;
+    margin-left: 12px;
+  }
 }
 .subscribe input[type='email'] {
-  width: 358px;
+  // width: 358px;
+  width: 450px;
   padding: 15px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
@@ -65,7 +93,20 @@ footer {
   color: #ffffff;
   height: 50px;
   margin: 0;
+  margin-top: 20px;
   &::placeholder {
     color: rgba(255, 255, 255, 0.6);
+  }
+  @media screen and (min-width: 1230px) {
+    width: 358px;
+    margin: 0;
+  }
+}
+.join-icons {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  @media screen and (min-width: 768px) {
+    margin-top: 0;
+    margin-bottom: 0;
   }
 }

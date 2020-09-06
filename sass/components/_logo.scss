@@ -5,10 +5,20 @@
   letter-spacing: 0.03em;
   text-decoration: none;
   color: $secondary-color;
+
+  @media screen and (max-width: 767px) {
+    display: block;
+    padding-left: 15px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
 }
 .logo-web {
   color: $accent-color;
 }
 .logo-studio {
   color: #ffffff;
+}
+.footer .logo {
+  padding-top: 0;
 }

@@ -1,6 +1,4 @@
 .hero {
-  max-width: 1600px;
-  height: 600px;
   background-color: $main-color;
   text-align: center;
   margin-left: auto;
@@ -10,8 +8,34 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../images/Hero-opt.jpg);
-  padding-top: 200px;
+    url(../images/Hero-mobile.jpg);
+
+  height: 400px;
+  padding-top: 118px;
+
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/Hero-tablet.jpg);
+  }
+  @media screen and (min-width: 1230px) {
+    width: 1600px;
+    height: 600px;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/Hero-opt.jpg);
+    padding-top: 200px;
+  }
 }
 .hero-title {
   color: #ffffff;
@@ -23,6 +47,10 @@
   text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 30px;
+
+  @media screen and (max-width: 1230px) {
+    font-size: 26px;
+  }
 }
 .hero-button {
   background-color: $accent-color;

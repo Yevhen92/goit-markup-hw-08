@@ -3,6 +3,9 @@
   .section-title {
     margin-bottom: 50px;
   }
+  @media screen and (max-width: 1230px) {
+    display: none;
+  }
 }
 .activity-item {
   width: calc((100% - 30px) / 3);
