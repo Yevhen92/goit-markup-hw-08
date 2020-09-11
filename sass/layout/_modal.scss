@@ -17,21 +17,30 @@
   left: 50%;
   transform: translate(-50%, -50%);
 
-  width: 528px;
+  // width: 528px;
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  padding: 40px;
+  padding: 20px;
+  @media screen and (max-width: 767px) {
+    width: 450px;
+    padding-top: 40px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 528px;
+    padding: 40px;
+  }
 }
 .give-information {
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
-  text-align: center;
+  display: inline-block;
   letter-spacing: 0.03em;
   color: #212121;
   margin-bottom: 12px;
+  text-align: center;
 }
 
 input[type='text'],
@@ -64,6 +73,10 @@ input[type='checkbox'] {
 }
 .agree-conditions {
   letter-spacing: 0.03em;
+
+  @media screen and (max-width: 767px) {
+    font-size: 12px;
+  }
 }
 .agreement {
   color: $accent-color;
